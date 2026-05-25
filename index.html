@@ -1,40 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felix | Assista Filmes e Séries Online</title>
-    <meta name="description" content="Assista aos melhores filmes e séries de ficção científica e ação na melhor plataforma de streaming.">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <title>Guiminamflix</title>
 </head>
+
 <body>
+    <header class="netflix-header">
+        <div class="logo">GUIMINAMFLIX</div>
+        <nav class="navigation">
+            <a href="#" class="active">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Bombando</a>
+            <a href="#">Minha lista</a>
+        </nav>
+    </header>
 
-    <main class="movie-card" role="main">
-        
-        <header class="card-header">
-            <span class="badge">SÉRIE ORIGINAL</span>
-            <h1>Interestelar</h1>
-        </header>
-        
-        <div class="card-meta">
-            <span class="rating">★ 4.9</span>
-            <span class="year">2026</span>
-            <span class="age-rating">14+</span>
-            <span class="seasons">1 Temporada</span>
-        </div>
+    <main>
+        <section class="chamada">
+            <div class="chamada-container">
+                <div class="chamada-texto">
+                    <span class="badge">FILME</span>
+                    <h1>ATRAVÉS DO ARANHAVERSO</h1>
+                    <p class="sinopse">Miles Morales retorna para o próximo capítulo da saga de Aranhaverso, uma aventura épica que vai transportar o protetor de Brooklyn através do Multiverso.</p>
+                    <p class="tag">#homem-aranha</p>
+                    
+                    <div class="botoes">
+                        <button class="btn-assistir">▶ Assistir</button>
+                        <button class="btn-info">ⓘ Mais Informações</button>
+                    </div>
+                </div>
 
-        <div class="card-content">
-            <p>As reservas de recursos da Terra estão chegando ao fim. Uma equipe de astronautas recebe a missão de verificar possíveis planetas para receberem a <strong class="highlight">humanidade</strong>.</p>
-        </div>
+                <div class="chamada-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
 
-        <footer class="card-footer">
-            <a href="#" class="btn-primary" aria-label="Assistir Interestelar agora">
-                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                Assistir Agora
-            </a>
-            
-            <a href="#" class="btn-secondary" aria-label="Mais informações sobre a série">
-                <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M11 17h2v-6h-2v6zm1-15C6.4
+        <section class="categoria">
+            <h2>Filmes e séries recomendados</h2>
+            <div class="categoria-videos">
+                <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc" class="video-card">
+                    <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Thumbnail" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8" class="video-card">
+                    <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" alt="Thumbnail" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=FvRmEapoHRc" class="video-card">
+                    <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" alt="Thumbnail" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw" class="video-card">
+                    <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" alt="Thumbnail" />
+                </a>
+                <a href="https://www.youtube.com/watch?v=d4DzMNGoyis" class="video-card">
+                    <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" alt="Thumbnail" />
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
