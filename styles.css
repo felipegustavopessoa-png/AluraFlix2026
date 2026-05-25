@@ -1,104 +1,60 @@
-/* ==========================================================================
-   1. VARIÁVEIS E CONFIGURAÇÕES GERAIS
-   ========================================================================== */
-:root {
-    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    --card-bg: #ffffff;
-    --text-main: #2d3748;
-    --text-muted: #718096;
-    --primary-color: #4a6fa5;
-    --primary-hover: #3b5984;
-    --highlight-color: #ff6b6b;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --radius: 16px;
-    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* Reset básico para garantir que o site ignore as margens chatas do navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: var(--bg-gradient);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
     padding: 20px;
-    color: var(--text-main);
+    font-size: 32px;
+    color: rgb(42, 122, 228);
 }
 
-/* ==========================================================================
-   2. COMPONENTE: CARD (O CONTAINER)
-   ========================================================================== */
-.card {
-    background-color: var(--card-bg);
-    padding: 40px 30px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    width: 100%;
-    max-width: 440px;
-    text-align: center;
-    transition: var(--transition);
+.chamada {
+    background: rgb(184, 156, 213);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Efeito sutil quando o usuário passa o mouse por cima do card */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+.chamada-texto {
+    margin-right: 5%;
 }
 
-/* ==========================================================================
-   3. ELEMENTOS INTERNOS
-   ========================================================================== */
-.card-header h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    margin-bottom: 16px;
+h1 {
+    font-size: 40px;
 }
 
-.card-content p {
-    font-size: 1.05rem;
-    color: var(--text-muted);
-    line-height: 1.6;
+p {
+    font-size: 20px;
 }
 
-/* Destacando a palavra "aprendizado" com elegância */
-.highlight {
-    color: var(--highlight-color);
-    background-color: rgba(255, 107, 107, 0.1);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: 600;
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
 }
 
-/* ==========================================================================
-   4. BOTÃO (O LINK REESTILIZADO)
-   ========================================================================== */
-.btn-primary {
-    display: inline-block;
-    margin-top: 28px;
-    padding: 12px 24px;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: var(--transition);
-    box-shadow: 0 4px 6px rgba(74, 111, 165, 0.2);
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(74, 111, 165, 0.3);
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
 }
 
-.btn-primary:active {
-    transform: translateY(0);
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid green;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
 }
